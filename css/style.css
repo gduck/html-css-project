@@ -1,0 +1,114 @@
+
+
+body {
+    font-family: sans-serif;
+    
+}
+
+#mainpage {
+  margin-left: 100px;
+}
+
+/*Trying nav stuff*/
+nav {
+    background: black;
+}
+.navlinks{
+  padding: 20px;
+  padding-left: 100px;
+  vertical-align: center;
+  color: #eee;
+}
+
+
+/*unvisted & visited links*/
+a:link, a:visited{
+  color: blue;
+  text-decoration: none;
+}
+/*active link*/
+a:active, a:hover{
+  padding: 10px;
+  text-decoration: none;
+  background-color: white;
+  /*do something here with an overlay image*/
+}
+
+#logocontainer {
+  width: 900px;
+  display: inline-block;
+  vertical-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+#logo1{
+  text-align: left;
+}
+#logo2{
+  text-align: right;
+}
+
+/*For the main text & request a quote button*/
+/*need to align this width with the image width above*/
+#container1{
+  background-image: url("images/bg_blurb.jpg");
+  background-repeat: repeat-x;
+  /*background-attachment: fixed;*/
+  width: 900px;
+  display: inline-block;
+  padding: 20px;
+  border: 5px solid #eee;
+}
+#blurb{
+  width: 500px;
+  float: left;
+
+}
+#blurb_button{
+  vertical-align: center;
+  text-align: right;
+}
+
+#home-boxes {
+  /*margin-right: 20px;*/
+}
+
+.home-box {
+    display:inline-block;
+    font-size: 75%;
+    width: 300px;
+    height: 200px;
+    margin-right:20px;
+    padding: 2px;
+    /*border: 3px solid gray;*/
+    /*float:left;*/
+}
+.outline{
+  padding: 2px;
+  border: 3px solid #eee;
+}
+
+footer {
+  padding-left: 100px;
+    background: black;
+    color: gray;
+}
+.box-footer {
+    display:inline-block;
+    vertical-align: top;
+    color: #gray;
+    font-size: 75%;
+    width: 30%;
+    height: 200px;
+    margin-right:20px;
+    padding: 2px;
+}
+
+/*.box-footer .blogroll .box-footer .textwidget #copyright #companybottom */
+
+/*#wrapper #container {} */
+/*#main-content #social-media*/
+
+/*.photobanner .imageshadow*/
+
+/* #home-boxes {}*/

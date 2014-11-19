@@ -1,8 +1,115 @@
 <!doctype html>
 <html>
-  <head>
-    <link rel="stylesheet" href="css/style.css"
-  </head>
-  <body>
-  </body>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+        <!-- need gray links - make a custom link class -->
+        <nav class="navlinks">
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Services</a>
+            <a href="">Blog</a>
+            <a href="">Contact Us</a>
+        </nav>
+
+    <!-- i suspect my mainpage setup needs fixing - used black bg for navbar only instead of bg img -->
+    <section id="mainpage">
+        <div id="logocontainer">
+            <!-- <div id="logo1"> -->
+            <img id="logo1" src="images/logo.png">
+            <!-- </div> -->
+
+            <!-- having trouble here putting the logo's right -->
+            <!-- <div id="logo2"> -->
+            <!-- <img id="logo2" src="images/socialNav.png"> -->
+            <!-- <div style text-align:"center;"> -->
+              <img id="logo2" src="images/linkedin-grey.png">
+              <img id="logo2" src="images/twitter-grey.png">
+              <img id="logo2" src="images/facebook-grey.png">
+              <img id="logo2" src="images/rss-grey.png">
+            <!-- </div> -->
+        </div>
+        <!-- end logo section */ -->
+        <div>
+            <!-- need to set this image width - make photobanner id-->
+            <img src="images/photobanner.png">
+            <img src="images/shadow_slider.png">
+        </div>
+
+        <div id="container1">
+            <!-- paragraph stuff -->
+            <div id="blurb">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <!-- button for quote -->
+            <div id="blurb_button">
+                <img src="images/button_blurb.png">
+            </div>
+        </div>
+
+        <!-- now our home boxes -->
+        <div>
+            <!-- **** Need blue links, not the same as nav links -->
+            <div id="home-boxes">
+                <div class="home-box">
+                    <h1 style color=white>Home Box 1</h1>
+                    <img class="outline" src="images/photo_column1.jpg" width="250">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <a href="">Read More></a>
+                </div>
+                <div class="home-box">
+                    <h1>Home Box 2</h1>
+                    <img class="outline" src="images/photo_column2.jpg" width="250">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <a href="">Read More></a>
+                </div>
+                <div class="home-box">
+                    <h1>Home Box 3</h1>
+                    <img class="outline" src="images/photo_column3.jpg" width="250">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <a href="">Read More></a>
+                </div>
+                <p></p>
+            </div>
+        </div>
+
+
+
+
+    </section>
+</body>
+
+<footer>
+    <div>
+        <div class="box-footer">
+            <h2>Blogroll</h2>
+                    <ul>
+                        <li>Documentation</li>
+                        <li>Plugins</li>
+                        <li>Suggest Ideas</li>
+                        <li>Support Forum</li>
+                        <li>Themes</li>
+                        <li>Wordpress Blog</li>
+                    </ul>
+        </div>
+        <div class="box-footer">
+            <h2>Text Widget</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. </p>
+        </div>
+        <div class="box-footer">
+            <h2>Meta Widget</h2>
+            <ul>
+                        <li>Login</li>
+                        <li>Entries RSS</li>
+                        <li>Comments Rss</li>
+                        <li>Wordpress.org</li>
+                    </ul>
+        </div>
+    </div>
+</footer>
+
 </html>
