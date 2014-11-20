@@ -172,7 +172,7 @@ footer {
   padding-left: 5%;
     background: black;
     color: gray;
-    float: bottom;
+    /*float: bottom;*/
 }
 .box-footer {
     display:inline-block;
@@ -180,9 +180,8 @@ footer {
     color: #gray;
     font-size: 75%;
     width: 30%;
-    height: 200px;
+    height: 250px;
     margin-right:20px;
-    padding: 2px;
     line-height: 2;
 }
 .box-footer a{color: gray;}
@@ -191,6 +190,15 @@ footer {
 }
 .box-footer li:last-child{
   border-bottom: 1px solid gray;
+}
+.footer_container {
+  font-size: 75%;
+}
+#foot1{
+  float: left;
+}
+#foot2{
+  float: right;
 }
 
 /*HARRY SUGGESTIONS*/
