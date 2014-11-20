@@ -21,18 +21,20 @@
             <!-- <div id="logo1"> -->
             <figure>
               <img id="logo1" src="images/logo.png">
-            <!-- </div> -->
-
-            <!-- having trouble here putting the logo's right -->
-            <!-- <div id="logo2"> -->
-            <!-- <img id="logo2" src="images/socialNav.png"> -->
-            <!-- <div style text-align:"center;"> -->
-              <img id="logo2" src="images/rss-grey.png">
-              <img id="logo2" src="images/facebook-grey.png">
-              <img id="logo2" src="images/twitter-grey.png">
-              <img id="logo2" src="images/linkedin-grey.png">
+            <!-- Apparently this is really dodgy & I need to learn about Sprites -->
+              <a href="images/rss-grey.png">
+                <img id="logo2" src="images/rss-grey.png" onmouseover="this.src='images/rss.png'" onmouseout="this.src='images/rss-grey.png'"/>
+              </a>
+              <a href="images/facebook-grey.png">
+                <img id="logo2" src="images/facebook-grey.png" onmouseover="this.src='images/facebook.png'" onmouseout="this.src='images/facebook-grey.png'"/>
+              </a>
+              <a href="images/twitter-grey.png">
+                <img id="logo2" src="images/twitter-grey.png" onmouseover="this.src='images/twitter.png'" onmouseout="this.src='images/twitter-grey.png'"/>
+              </a>
+              <a href="images/linkedin-grey.png">
+                <img id="logo2" src="images/linkedin-grey.png" onmouseover="this.src='images/linkedin.png'" onmouseout="this.src='images/linkedin-grey.png'"/>
+              </a>
             </figure>
-            <!-- </div> -->
         </div>
         <!-- end logo section */ -->
         <div id="banner">
@@ -58,7 +60,7 @@
             <div id="home-boxes">
                 <div class="home-box">
                     <h1 style color=white>Home Box 1</h1>
-                    <img class="outline" src="images/photo_column1.jpg" width="250">
+                    <img class="outline" src="images/photo_column1.jpg">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     <br>
                     <a href="">Read More></a>
@@ -66,7 +68,7 @@
                 </div>
                 <div class="home-box">
                     <h1>Home Box 2</h1>
-                    <img class="outline" src="images/photo_column2.jpg" width="250">
+                    <img class="outline" src="images/photo_column2.jpg">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     <br>
                     <a href="">Read More></a>
@@ -74,7 +76,7 @@
                 </div>
                 <div class="home-box">
                     <h1>Home Box 3</h1>
-                    <img class="outline" src="images/photo_column3.jpg" width="250">
+                    <img class="outline" src="images/photo_column3.jpg">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     <br>
                     <a href="">Read More></a>
@@ -95,12 +97,12 @@
         <div class="box-footer">
             <h2>Blogroll</h2>
                     <ul>
-                        <li>Documentation</li>
-                        <li>Plugins</li>
-                        <li>Suggest Ideas</li>
-                        <li>Support Forum</li>
-                        <li>Themes</li>
-                        <li>Wordpress Blog</li>
+                        <li><a href="">Documentation</a></li>
+                        <li><a href="">Plugins</a></li>
+                        <li><a href="">Suggest Ideas</a></li>
+                        <li><a href="">Support Forum</a></li>
+                        <li><a href="">Themes</a></li>
+                        <li><a href="">Wordpress Blog</a></li>
                     </ul>
         </div>
         <div class="box-footer">
@@ -111,10 +113,10 @@
         <div class="box-footer">
             <h2>Meta Widget</h2>
             <ul>
-                        <li>Login</li>
-                        <li>Entries RSS</li>
-                        <li>Comments Rss</li>
-                        <li>Wordpress.org</li>
+                        <li><a href="">Login</a></li>
+                        <li><a href="">Entries RSS</a></li>
+                        <li><a href="">Comments Rss</a></li>
+                        <li><a href="">Wordpress.org</a></li>
                     </ul>
         </div>
     </div>

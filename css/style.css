@@ -47,13 +47,13 @@ table {
 /*BODY & MAIN PAGE*/
 body {
     font-family: sans-serif;
-    /*** No background image stuff working yet*/
-    /*background-image: url("images/bg_body.jpg");*/
-    /*background-repeat: repeat-x;*/
-    /*background-position: top left;*/
+    background: url("../images/bg_wrapper.png") repeat-x;
+    /*background-image: url("../images/bg_body.jpg");*/
+
 }
 #mainpage {
-  margin-left: 100px;
+  margin-left: 5%;
+  width:100%;
   /*background-image: url("images/bg_body.jpg");*/
 }
 
@@ -61,12 +61,14 @@ body {
 
 /* NAV STUFF*/
 nav {
-    background: black;
+  /*background-color: black;*/
+    /*background-image: url("../images/bg_wrapper/png");*/
 }
 .navlinks{
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 100px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 5%;
+  font-size: 125%;
   /*** Need to space letters & change the colour*/
   vertical-align: center;
   color: #eee;
@@ -75,21 +77,21 @@ nav {
   padding-right: 20px;
   text-decoration: none;
   color: #eee;
+  background-image: url("../images/bg_wrapper.png");
+  z-index: -1;
 }
 .navlinks a:hover, a:active{
   background-image: url("../bg_nav_rollover.png");
+  /*color: blue;*/
 }
 /*unvisted & visited links*/
-/*** need to revisit this to separate nav links from other links*/
 a:link, a:visited{
-  /*color: blue;*/
   text-decoration: none;
 }
 /*active link*/
 a:active, a:hover{
   /*padding: 10px;*/
   /*text-decoration: none;*/
-
   /*do something here with an overlay image*/
 }
 
@@ -97,7 +99,7 @@ a:active, a:hover{
 
 /*TOP LOGO STUFF*/
 #logocontainer {
-  width: 900px;
+  width: 90%;
   display: inline-block;
   vertical-align: center;
   margin-top: 15px;
@@ -109,13 +111,13 @@ a:active, a:hover{
 /*This is not aligning right*/
 #logo2{
   float: right;
+  margin: 10px;
 }
 
-#banner{
-  display: block;
-}
+#banner{}
 #banner img{
   display: block;
+  width: 90%;
 }
 
 
@@ -124,15 +126,19 @@ a:active, a:hover{
 /*** Can't get any background images working*/
 #container1{
   background-image: url("../images/bg_blurb.jpg");
-  background-repeat: repeat-x;
+  /*background-repeat: repeat-x;*/
   /*background-attachment: fixed;*/
-  width: 900px;
+  width: 85%;
   display: block;
   padding: 20px;
-  /*border: 5px solid #eee;*/
+  border-top: 1px solid gray;
+  border-left: 1px solid gray;
+  border-right: 1px solid white;
+  border-bottom: 1px solid white;
+  /*box-shadow: -1px -1px #eee;*/
 }
 #blurb{
-  width: 580px;
+  width: 60%;
   float: left;
 }
 #blurb_button{
@@ -141,15 +147,13 @@ a:active, a:hover{
 }
 
 /*3 HOME BOXES*/
-/*look ok but pretty dodgy layout*/
-/*if browser resized will get messed up*/
 #home-boxes {
-  /*margin-right: 20px;*/
+  width: 90%;
 }
 .home-box {
     display:inline-block;
     font-size: 75%;
-    width: 300px;
+    width: 30%;
     height: 200px;
     margin-right:20px;
     padding: 2px;
@@ -159,15 +163,16 @@ a:active, a:hover{
 }
 .outline{
   padding: 2px;
-  border: 3px solid #eee;
+  border: 2px solid gray;
 }
 
 /*FOOTER STUFF*/
 /*not yet looked at links, underlines or layout*/
 footer {
-  padding-left: 100px;
+  padding-left: 5%;
     background: black;
     color: gray;
+    float: bottom;
 }
 .box-footer {
     display:inline-block;
@@ -178,6 +183,14 @@ footer {
     height: 200px;
     margin-right:20px;
     padding: 2px;
+    line-height: 2;
+}
+.box-footer a{color: gray;}
+.box-footer li, .box-footer p{
+  border-top: 1px solid gray;
+}
+.box-footer li:last-child{
+  border-bottom: 1px solid gray;
 }
 
 /*HARRY SUGGESTIONS*/
