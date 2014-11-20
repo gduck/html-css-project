@@ -1,39 +1,101 @@
+/*RESET CODE*/
+html, body, div, span, applet, object, iframe, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1.5;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
 
 
+
+/*BODY & MAIN PAGE*/
 body {
     font-family: sans-serif;
-    
+    /*** No background image stuff working yet*/
+    /*background-image: url("images/bg_body.jpg");*/
+    /*background-repeat: repeat-x;*/
+    /*background-position: top left;*/
 }
-
 #mainpage {
   margin-left: 100px;
+  /*background-image: url("images/bg_body.jpg");*/
 }
 
-/*Trying nav stuff*/
+
+
+/* NAV STUFF*/
 nav {
     background: black;
 }
 .navlinks{
-  padding: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   padding-left: 100px;
+  /*** Need to space letters & change the colour*/
   vertical-align: center;
   color: #eee;
 }
-
-
+.navlinks a {
+  padding-right: 20px;
+  text-decoration: none;
+  color: #eee;
+}
+.navlinks a:hover, a:active{
+  background-image: url("../bg_nav_rollover.png");
+}
 /*unvisted & visited links*/
+/*** need to revisit this to separate nav links from other links*/
 a:link, a:visited{
-  color: blue;
+  /*color: blue;*/
   text-decoration: none;
 }
 /*active link*/
 a:active, a:hover{
-  padding: 10px;
-  text-decoration: none;
-  background-color: white;
+  /*padding: 10px;*/
+  /*text-decoration: none;*/
+
   /*do something here with an overlay image*/
 }
 
+
+
+/*TOP LOGO STUFF*/
 #logocontainer {
   width: 900px;
   display: inline-block;
@@ -44,35 +106,46 @@ a:active, a:hover{
 #logo1{
   text-align: left;
 }
+/*This is not aligning right*/
 #logo2{
-  text-align: right;
+  float: right;
 }
+
+#banner{
+  display: block;
+}
+#banner img{
+  display: block;
+}
+
 
 /*For the main text & request a quote button*/
 /*need to align this width with the image width above*/
+/*** Can't get any background images working*/
 #container1{
-  background-image: url("images/bg_blurb.jpg");
+  background-image: url("../images/bg_blurb.jpg");
   background-repeat: repeat-x;
   /*background-attachment: fixed;*/
   width: 900px;
-  display: inline-block;
+  display: block;
   padding: 20px;
-  border: 5px solid #eee;
+  /*border: 5px solid #eee;*/
 }
 #blurb{
-  width: 500px;
+  width: 580px;
   float: left;
-
 }
 #blurb_button{
   vertical-align: center;
   text-align: right;
 }
 
+/*3 HOME BOXES*/
+/*look ok but pretty dodgy layout*/
+/*if browser resized will get messed up*/
 #home-boxes {
   /*margin-right: 20px;*/
 }
-
 .home-box {
     display:inline-block;
     font-size: 75%;
@@ -80,14 +153,17 @@ a:active, a:hover{
     height: 200px;
     margin-right:20px;
     padding: 2px;
-    /*border: 3px solid gray;*/
-    /*float:left;*/
+}
+.home-box a{
+  color: blue;
 }
 .outline{
   padding: 2px;
   border: 3px solid #eee;
 }
 
+/*FOOTER STUFF*/
+/*not yet looked at links, underlines or layout*/
 footer {
   padding-left: 100px;
     background: black;
@@ -104,11 +180,9 @@ footer {
     padding: 2px;
 }
 
+/*HARRY SUGGESTIONS*/
 /*.box-footer .blogroll .box-footer .textwidget #copyright #companybottom */
-
 /*#wrapper #container {} */
 /*#main-content #social-media*/
-
 /*.photobanner .imageshadow*/
-
 /* #home-boxes {}*/
